@@ -11,9 +11,9 @@ Code available at: [https://github.com/krozet/Iteration-vs-Recursion-1.git](http
 # The Problem
 
 Make a sorted integer array a[i]=i, i=0,…,n-1. Let bs(a,n,x) be a binary search program that returns the index i of array a[0..n-1] where a[i]=x. Obviously, the result is bs(a,n,x)=x, and the binary search function can be tested using the loop
-
-        for(j=0; j&lt;K; j++) for(i=0; i&lt;n; i++) if(bs(a,n,i) != i) cout &lt;&lt; &quot;\nERROR&quot;;
-
+```C++
+        for(j=0; j<K; j++) for(i=0; i<n; i++) if(bs(a,n,i) != i) cout << "\nERROR";
+```
  Select the largest n your software can support and then K so that this loop with an iterative version of bs runs 3 seconds or more. Then measure and compare this run time and the run time of the loop that uses a recursive version of bs. Compare these run times using maximum compiler optimization (release version) and the slowest version (minimum optimization or the debug version). If you use a laptop, make measurements using AC power, and then same measurements using only the battery. What conclusions can you derive from these experiments? Who is faster? Why?
 
 
