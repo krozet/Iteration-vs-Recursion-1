@@ -1,3 +1,10 @@
+/*
+Keawa Rozet
+CSc 600-01 - Programming Languages
+Homework #2
+Iteration vs Recursion 1
+*/
+
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
@@ -57,8 +64,6 @@ int binarySearchRecursion(int* array, int left, int n, int i) {
 }
 
 void initArray(int* array) {
-  int rd;
-  // array[0] = 1;
   for (int i = 0; i < SIZE; i++) {
     //ascending sorted array
     array[i] = i;
